@@ -5,6 +5,9 @@
 
 <script>
 function calculate() {
+let PV = document.getElementById("fn").value;
+let n = document.getElementById("sn").value;
+let r = document.getElementById("tn").value;
 let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
 document.getElementById ("ans").innerHTML = P;
 }
@@ -15,9 +18,9 @@ document.getElementById ("ans").innerHTML = P;
   <h3>Loan Payment Calculator</h3>
 
   <p>
-  <input id="PV"> Present Value <br>
-  <input id="n"> Years <br>
-  <input id="r"> % Annual Interest Rate <br>
+  <input id="fn"> Present Value <br>
+  <input id="sn"> Years <br>
+  <input id="tn"> % Annual Interest Rate <br>
   <button onclick="calculate()"> Calculate Monthly Payment </button>
     
   </p>
