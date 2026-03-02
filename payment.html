@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Javascript IO Page</title>
 
+<script>
+function calculate() {
+let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+document.getElementById ("ans").innerHTML = c;
+}
+
+</script>
+  
+</head>
+  <h3>Loan Payment Calculator</h3>
+
+  <p>
+  Present Value <input id="PV"> <br>
+  Years <input id="n"> <br>
+  % Annual Interest Rate <input id="r"> <br>
+  <button onclick="calculate()"> Calculate Monthly Payment </button>
+    
+  </p>
+  <p>
+  Answer: <span id="ans"> ____________ </span>
+  </p>
+
+  
+<body>
+</body>
+</html>
